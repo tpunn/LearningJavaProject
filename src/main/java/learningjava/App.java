@@ -39,7 +39,7 @@ public class App {
      */
     static void problem2() {
         int x = 1;
-        while (x <= 100)
+        while (x <= 10)
             System.out.println(x++);
     }
 
@@ -55,9 +55,12 @@ public class App {
      * 91 92 93 94 95 96 97 98 99 100
      */
     static void problem3() {
-        int x = 1;
-        while (x <= 100)
-            System.out.print(x + (x++ % 10 == 0 ? "\n" : " "));
+        for (int i = 0; i < 10; i++) {
+            for (int j = 1; j <= 10; j++) {
+               System.out.print((i * 10 + j) + " ");
+            }
+            System.out.print("\n");
+         }
     }
 
     /*
